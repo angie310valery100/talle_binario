@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Este es un ejemplo</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<canvas id = "miCanvas"
+      width="200"  height="100" style="border=1px solid #d3d3d3";>
+    </canvas>
+<script>
+         var dato ;
+         var error=0;
+         var mensaje;
+         dato= prompt ("Ingresar dato : " ,"");
+         alert (" El dato es: "+ dato);
+         if (dato.length !== 4) {
+           error = 1; mensaje = "tamaño diferente de 4";}
+              for (var i =0 ; i < dato.length; i ++)
+              if (dato.charAt(i)!== '0' && dato.charAt(i) !== '1'){
+              error=1 ; mensaje ="Contiene caracteres distintos de 0 o 1";}
+              if (error)
+              alert (" ERROR : " + mensaje );
+              else {
+                
+              }
+</script>
+
+</body>
+</html>
